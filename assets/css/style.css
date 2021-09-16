@@ -157,7 +157,7 @@ html {
 #slider {        
     margin-top: 46px;
     padding-top: 50%;    
-    background: url(https://www.w3schools.com/w3images/chicago.jpg) no-repeat center / cover ;
+    background: url(/assets/chicago.jpg) no-repeat center / cover ;
     position: relative;
 }
 
