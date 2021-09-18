@@ -7,7 +7,8 @@
     <title>The Band</title>
     <link rel="icon" href="https://img.icons8.com/color/48/000000/music-band.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">    
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div id="header">
             <ul id="nav-list">
                 <li class="nav-item" >
-                    <a class="nav-item__link" href="">Home</a>
+                    <a class="nav-item__link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-item__link" href="#band">Band</a>
@@ -26,28 +27,34 @@
                 <li class="nav-item">
                     <a class="nav-item__link" href="#contact">Contact</a>
                 </li>
+                <li class="nav-item nav-end">
+                    <a class="nav-item__link" href="#map">Map</a>
+                </li>
                 <li class="nav-item nav-more">
-                    <a class="nav-item__link" href="">
+                    <a class="nav-item__link" href="#">
                         More
                         <i class="ti-angle-down icon-arroud"></i>
                     </a>
                     <ul class="subnav-list">
                         <li class="subnav-item">
-                            <a class="subnav-item__link" href="">Merchandise</a>
+                            <a class="subnav-item__link" href="#">Merchandise</a>
                         </li>
                         <li class="subnav-item">
-                            <a class="subnav-item__link" href="">Extras</a>
+                            <a class="subnav-item__link" href="#">Extras</a>
                         </li>
                         <li class="subnav-item">
-                            <a class="subnav-item__link" href="">Media</a>
+                            <a class="subnav-item__link" href="#">Media</a>
                         </li>
                     </ul>
                 </li>
             </ul>
 
-            <div class="search-btn">
-                <!-- <i class="search-icon ti-search"></i> -->
+            <div class="search-btn">                
                 <i class="search-icon fa fa-search" aria-hidden="true"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon fas fa-bars"></i>
             </div>
         </div>
 
@@ -68,15 +75,15 @@
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="members-list">
-                    <div class="col-third members-item">
+                    <div class="col-third members-item member-item">
                         <p class="members-name">Name</p>
                         <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="members-img">
                     </div>
-                    <div class="col-third members-item">
+                    <div class="col-third members-item member-item">
                         <p class="members-name">Name</p>
                         <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="members-img">
                     </div>
-                    <div class="col-third members-item">
+                    <div class="col-third members-item member-item">
                         <p class="members-name">Name</p>
                         <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Name" class="members-img">
                     </div>                    
@@ -95,7 +102,7 @@
                     </ul>
                     <!-- Places -->
                     <div class="row place-list">
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-col-full">
                             <img src="./assets/img/places/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -104,7 +111,7 @@
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>                        
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-col-full">
                             <img src="./assets/img/places/place2.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -113,7 +120,7 @@
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>                        
-                        <div class="col col-third">
+                        <div class="col col-third mt-16 s-col-full">
                             <img src="./assets/img/places/place3.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -132,18 +139,18 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="fas fa-map-marker-alt icon"></i>Chicago, US</p>
-                        <p><i class="fas fa-phone-alt icon"></i>Phone: +00 151515</p>
-                        <p><i class="fas fa-envelope icon"></i>Email: mail@mail.com</p>
+                        <p><i class="fas fa-phone-alt icon"></i>Phone: <a href="tel:0375533***">0375533***</a></p>
+                        <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:batruong2262002@gmail.com">batruong2262002@gmail.com</a></p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                             </div>
@@ -152,14 +159,14 @@
                                     <input type="message" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="mt-16 form-submit-btn " type="submit" value="SEND">
+                            <input class="mt-16 form-submit-btn s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
             </div>
             <!-- Map -->
 
-            <div class="map-section">
+            <div id="map" class="map-section">
                 <img src="./assets/img/map.jpg" alt="Map">
             </div>
         </div>
@@ -179,6 +186,35 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        
+       // Đóng/mở mobie menu 
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav-list li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            console.log(menuItem);
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }        
+
+
+    </script>
     
 </body>
 </html>
